@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>معجم العين – أول معجم عربي ذكي (النسخة التجريبية)</title>
+    <title>معجم العين – أول معجم عربي ذكي (النسخة المتقدمة)</title>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -17,18 +17,24 @@
 </head>
 <body>
 
-    <!-- Hero Section (نفس السابق) -->
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <nav id="navbar" class="navbar">
             <div class="container navbar-container">
-                <a href="#" class="logo"><div class="logo-icon"><i class="fa-solid fa-book-open"></i></div><div><h2>معجم العين</h2><p>أول معجم عربي شامل</p></div></a>
+                <a href="#" class="logo"><div class="logo-icon"><i class="fa-solid fa-book-open"></i></div><div><h2> النمذجة الرياضية لمعجم العين</h2><p>أول معجم عربي شامل</p></div></a>
                 <div class="nav-links"><a href="#">الرئيسية</a><a href="#">البحث المتقدم</a><a href="#">الأبواب</a><a href="#">مخارج الحروف</a><a href="#">تواصل</a></div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fa-solid fa-ellipsis"></i></button>
             </div>
-            <div class="mobile-menu" id="mobileMenu"><a href="#">الرئيسية</a><a href="#">البحث المتقدم</a><a href="#">الأبواب</a><a href="#">مخارج الحروف</a><a href="#">تواصل</a></div>
-        </nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home">الرئيسية</a>
+    <a href="#searchWrapper">البحث المتقدم</a>
+    <a href="#abwab">الأبواب</a>
+    <a href="#makharij">مخارج الحروف</a>
+    <a href="#about">عن معجم العين</a>
+    <a href="#contact">اتصال</a>
+</div>       </nav>
         <div class="hero-content">
             <div class="container hero-container">
                 <div class="hero-text">
@@ -47,10 +53,10 @@
         </div>
     </section>
 
-    <!-- أبواب المعجم -->
-    <section class="abwab-section" id="abwab"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-solid fa-layer-group"></i> أبواب المعجم</span><h2>تصنيف <span class="text-gold">الجذور</span> حسب عدد الحروف</h2><div class="title-divider"></div><p>يعتمد معجم العين على نظام ترتيب الجذور وفق عدد حروفها الأصلي، من الثنائي إلى الخماسي.</p></div><div class="abwab-grid"><div class="abwab-card" data-bab="ثنائي"><div class="abwab-icon"><i class="fa-solid fa-2"></i></div><h3>باب الثنائي</h3><p>الجذور المكونة من حرفين أصليين، وهي نادرة ولكنها أصلية في العربية.</p><div class="abwab-example">مثال: "كم"، "لو"</div><button class="abwab-btn" data-bab="ثنائي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="ثلاثي"><div class="abwab-icon"><i class="fa-solid fa-3"></i></div><h3>باب الثلاثي</h3><p>أكثر الأبواب انتشاراً، يشكل غالبية اللغة العربية.</p><div class="abwab-example">مثال: "كتب" (ك، ت، ب)</div><button class="abwab-btn" data-bab="ثلاثي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="رباعي"><div class="abwab-icon"><i class="fa-solid fa-4"></i></div><h3>باب الرباعي</h3><p>جذور رباعية مثل "دحرج"، "وسوس".</p><div class="abwab-example">مثال: "دحرج" (د، ح، ر، ج)</div><button class="abwab-btn" data-bab="رباعي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="خماسي"><div class="abwab-icon"><i class="fa-solid fa-5"></i></div><h3>باب الخماسي</h3><p>جذور خماسية قليلة، غالباً ما تكون مضعفة أو مزيدة.</p><div class="abwab-example">مثال: "سفرجل" (س، ف، ر، ج، ل)</div><button class="abwab-btn" data-bab="خماسي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="ملحق"><div class="abwab-icon"><i class="fa-solid fa-asterisk"></i></div><h3>ملحق بالأبواب</h3><p>أفعال مزيدة أو أبواب متعددة.</p><div class="abwab-example">مثال: "استكتب"</div><button class="abwab-btn" data-bab="ملحق">استعراض الكلمات</button></div></div></div></section>
+    <!-- أبواب المعجم (5 أبواب فقط، تم حذف باب المعتل واللفيف) -->
+    <section class="abwab-section" id="abwab"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-solid fa-layer-group"></i> أبواب المعجم</span><h2>تصنيف <span class="text-gold">الجذور</span> حسب عدد الحروف</h2><div class="title-divider"></div><p>يعتمد معجم العين على نظام ترتيب الجذور وفق عدد حروفها الأصلي، من الثنائي إلى الخماسي، بالإضافة إلى ملحق الأبواب.</p></div><div class="abwab-grid"><div class="abwab-card" data-bab="ثنائي"><div class="abwab-icon"><i class="fa-solid fa-2"></i></div><h3>باب الثنائي</h3><p>الجذور المكونة من حرفين أصليين، وهي نادرة ولكنها أصلية في العربية.</p><div class="abwab-example">مثال: "كم"، "لو"</div><button class="abwab-btn" data-bab="ثنائي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="ثلاثي"><div class="abwab-icon"><i class="fa-solid fa-3"></i></div><h3>باب الثلاثي</h3><p>أكثر الأبواب انتشاراً، يشكل غالبية اللغة العربية.</p><div class="abwab-example">مثال: "كتب" (ك، ت، ب)</div><button class="abwab-btn" data-bab="ثلاثي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="رباعي"><div class="abwab-icon"><i class="fa-solid fa-4"></i></div><h3>باب الرباعي</h3><p>جذور رباعية مثل "دحرج"، "وسوس".</p><div class="abwab-example">مثال: "دحرج" (د، ح، ر، ج)</div><button class="abwab-btn" data-bab="رباعي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="خماسي"><div class="abwab-icon"><i class="fa-solid fa-5"></i></div><h3>باب الخماسي</h3><p>جذور خماسية قليلة، غالباً ما تكون مضعفة أو مزيدة.</p><div class="abwab-example">مثال: "سفرجل" (س، ف، ر، ج، ل)</div><button class="abwab-btn" data-bab="خماسي">استعراض الكلمات</button></div><div class="abwab-card" data-bab="ملحق"><div class="abwab-icon"><i class="fa-solid fa-asterisk"></i></div><h3>ملحق بالأبواب</h3><p>أفعال مزيدة، جذور معتلة، ولفيفة.</p><div class="abwab-example">مثال: "فحو"، "حيق"، "قوي"</div><button class="abwab-btn" data-bab="ملحق">استعراض الكلمات</button></div></div></div></section>
 
-    <!-- مخارج الحروف (مختصر لكن كامل) -->
+    <!-- مخارج الحروف -->
     <section class="makharij-section" id="makharij"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-solid fa-microphone-alt"></i> مخارج الحروف</span><h2>تعلم <span class="text-gold">مخارج الحروف</span> العربية</h2><div class="title-divider"></div><p>استمع واكتشف الموضع الصحيح لخروج كل حرف من الجوف، الحلق، الشفتين، واللسان – كما ورد في معجم العين وعلم التجويد.</p></div><div class="makharij-grid"><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-lungs"></i> الجوف والحلق</h3><div class="letters-grid"><div class="letter-card" data-letter="ء" data-makhraj="أقصى الحلق" data-pronounce="ء"><span class="letter-text">ء (همزة)</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ه" data-makhraj="أقصى الحلق" data-pronounce="ه"><span class="letter-text">هـ</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ع" data-makhraj="وسط الحلق" data-pronounce="ع"><span class="letter-text">ع</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ح" data-makhraj="وسط الحلق" data-pronounce="ح"><span class="letter-text">ح</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="غ" data-makhraj="أدنى الحلق" data-pronounce="غ"><span class="letter-text">غ</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="خ" data-makhraj="أدنى الحلق" data-pronounce="خ"><span class="letter-text">خ</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-tongue"></i> أقصى اللسان</h3><div class="letters-grid"><div class="letter-card" data-letter="ق" data-makhraj="أقصى اللسان مع الحنك الأعلى" data-pronounce="ق"><span class="letter-text">ق</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ك" data-makhraj="أسفل من القاف قليلاً" data-pronounce="ك"><span class="letter-text">ك</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-tongue"></i> وسط اللسان</h3><div class="letters-grid"><div class="letter-card" data-letter="ج" data-makhraj="وسط اللسان مع الحنك" data-pronounce="ج"><span class="letter-text">ج</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ش" data-makhraj="وسط اللسان مع الحنك" data-pronounce="ش"><span class="letter-text">ش</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ي" data-makhraj="وسط اللسان مع الحنك (غير مدية)" data-pronounce="ي"><span class="letter-text">ي</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-tongue"></i> حافة اللسان</h3><div class="letters-grid"><div class="letter-card" data-letter="ض" data-makhraj="حافة اللسان مع الأضراس" data-pronounce="ض"><span class="letter-text">ض</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-tongue"></i> طرف اللسان</h3><div class="letters-grid"><div class="letter-card" data-letter="ل" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="ل"><span class="letter-text">ل</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ن" data-makhraj="طرف اللسان مع الغار" data-pronounce="ن"><span class="letter-text">ن</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ر" data-makhraj="طرف اللسان مع الحنك" data-pronounce="ر"><span class="letter-text">ر</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ت" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="ت"><span class="letter-text">ت</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="د" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="د"><span class="letter-text">د</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ط" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="ط"><span class="letter-text">ط</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="س" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="س"><span class="letter-text">س</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ز" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="ز"><span class="letter-text">ز</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ص" data-makhraj="طرف اللسان مع الثنايا" data-pronounce="ص"><span class="letter-text">ص</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ظ" data-makhraj="طرف اللسان مع الثنايا العليا" data-pronounce="ظ"><span class="letter-text">ظ</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ذ" data-makhraj="طرف اللسان مع الثنايا العليا" data-pronounce="ذ"><span class="letter-text">ذ</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ث" data-makhraj="طرف اللسان مع الثنايا السفلى" data-pronounce="ث"><span class="letter-text">ث</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-lips"></i> الشفتان</h3><div class="letters-grid"><div class="letter-card" data-letter="ف" data-makhraj="باطن الشفة السفلى مع الثنايا" data-pronounce="ف"><span class="letter-text">ف</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="ب" data-makhraj="الشفتين معاً" data-pronounce="ب"><span class="letter-text">ب</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="م" data-makhraj="الشفتين معاً" data-pronounce="م"><span class="letter-text">م</span><i class="fa-solid fa-volume-high sound-icon"></i></div><div class="letter-card" data-letter="و" data-makhraj="الشفتين معاً (غير مدية)" data-pronounce="و"><span class="letter-text">و</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div><div class="makhraj-group"><h3 class="group-title"><i class="fa-solid fa-nose"></i> الخيشوم</h3><div class="letters-grid"><div class="letter-card" data-letter="غنة" data-makhraj="الأنف (غنة النون والميم المشددتين)" data-pronounce="غنّة"><span class="letter-text">غنة</span><i class="fa-solid fa-volume-high sound-icon"></i></div></div></div></div><div class="makharij-note"><i class="fa-solid fa-circle-info"></i> اضغط على أي حرف لسماع نطقه ومعرفة مخرجه.</div></div></section>
 
     <!-- نتائج البحث -->
@@ -64,18 +70,17 @@
 
     <!-- عن معجم العين -->
     <section class="about-section" id="about"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-regular fa-landmark"></i> تراث لغوي</span><h2>عن <span class="text-gold">معجم العين</span></h2><div class="title-divider"></div></div><div class="about-content"><div class="about-text"><p><strong>معجم العين</strong> هو أول معجم عربي وضعه الخليل بن أحمد الفراهيدي. اعتمد فيه منهجاً فريداً بترتيب الكلمات حسب <strong>مخارج الحروف</strong> من أقصى الحلق إلى الشفتين، مبتدئاً بالعين (أقصى الحلق) ومنتهياً بالياء.</p><p>يُعتبر هذا المعجم أساس علم العروض وعلم الصرف العربي. يحتوي على أكثر من <strong>8000 جذر لغوي</strong> مصنفة وفق نظام التقليبات التي تكشف العلاقات بين الكلمات.</p><p>من خلال هذا الموقع، نُحيي هذا الإرث العظيم ونجعله في متناول الباحثين والطلاب.</p></div><div class="about-stats"><div class="stat-box"><span>+8000</span><br>جذر لغوي</div><div class="stat-box"><span>5</span><br>أبواب رئيسية</div><div class="stat-box"><span>17</span><br>مخرجاً للحروف</div><div class="stat-box"><span>الهاء</span><br>أول حرف في المعجم</div></div></div></div></section>
+        <!-- تواصل -->
+    <section class="contact-info-section" id="contact"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-regular fa-address-card"></i> تواصل معنا</span><h2>كن <span class="text-gold">على تواصل</span> مع فريق معجم العين</h2><div class="title-divider"></div><p>نرحّب باستفساراتكم ومقترحاتكم. يمكنكم التواصل معنا عبر القنوات التالية.</p></div><div class="contact-cards"><div class="contact-card"><div class="contact-icon"><i class="fa-regular fa-envelope"></i></div><h3>البريد الإلكتروني</h3><p>mariammokhtari2003@gmail.com </p></div><div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div><h3>الهاتف</h3><p>213792091104+</p></div><div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div><h3>المقر الرئيسي</h3><p>الجزائر العاصمة، المسيلة</p><p>متوفرون أونلاين 24/7</p></div></div><div class="social-media"><h3>تابعنا على وسائل التواصل</h3><div class="social-icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a></div></div></div></section>
 
-    <!-- تواصل -->
-    <section class="contact-info-section" id="contact"><div class="container"><div class="section-header"><span class="section-badge"><i class="fa-regular fa-address-card"></i> تواصل معنا</span><h2>كن <span class="text-gold">على تواصل</span> مع فريق معجم العين</h2><div class="title-divider"></div><p>نرحّب باستفساراتكم ومقترحاتكم. يمكنكم التواصل معنا عبر القنوات التالية.</p></div><div class="contact-cards"><div class="contact-card"><div class="contact-icon"><i class="fa-regular fa-envelope"></i></div><h3>البريد الإلكتروني</h3><p>info@almoein.dz</p><p>support@almoein.dz</p></div><div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div><h3>الهاتف</h3><p>+213 5XX XX XX XX</p><p>+213 5XX XX XX XX</p></div><div class="contact-card"><div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div><h3>المقر الرئيسي</h3><p>الجزائر العاصمة، المسيلة</p><p>متوفرون أونلاين 24/7</p></div></div><div class="social-media"><h3>تابعنا على وسائل التواصل</h3><div class="social-icons"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-telegram"></i></a></div></div></div></section>
-
-    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo"><i class="fa-solid fa-book-open"></i><span>معجم العين</span></div><p>أول معجم عربي يُرتَّب حسب مخارج الحروف، للخليل بن أحمد الفراهيدي. نُحيي تراثه رقمياً.</p></div><div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="#">الرئيسية</a></li><li><a href="#abwab">الأبواب</a></li><li><a href="#makharij">مخارج الحروف</a></li><li><a href="#wordResultSection">نتائج البحث</a></li><li><a href="#contact">تواصل</a></li></ul></div><div class="footer-col"><h4>مشروع معجم العين</h4><ul><li><a href="#">عن المشروع</a></li><li><a href="#">فريق العمل</a></li><li><a href="#">المصادر والمراجع</a></li><li><a href="#">الشروط والأحكام</a></li></ul></div><div class="footer-col"><h4>تواصل معنا</h4><div class="footer-contact"><p><i class="fa-regular fa-envelope"></i> info@almoein.dz</p><p><i class="fa-solid fa-phone"></i> +213 5XX XX XX XX</p></div><div class="footer-social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div></div></div><div class="footer-bottom"><p>&copy; 2026 معجم العين – جميع الحقوق محفوظة | تصميم وتطوير <strong>G Mayne</strong></p></div></div></footer>
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col"><div class="footer-logo"><i class="fa-solid fa-book-open"></i><span>معجم العين</span></div><p>أول معجم عربي يُرتَّب حسب مخارج الحروف، للخليل بن أحمد الفراهيدي. نُحيي تراثه رقمياً.</p></div><div class="footer-col"><h4>روابط سريعة</h4><ul><li><a href="#">الرئيسية</a></li><li><a href="#abwab">الأبواب</a></li><li><a href="#makharij">مخارج الحروف</a></li><li><a href="#wordResultSection">نتائج البحث</a></li><li><a href="#contact">تواصل</a></li></ul></div><div class="footer-col"><h4>مشروع معجم العين</h4><ul><li><a href="#">عن المشروع</a></li><li><a href="#">فريق العمل</a></li><li><a href="#">المصادر والمراجع</a></li><li><a href="#">الشروط والأحكام</a></li></ul></div><div class="footer-col"><h4>تواصل معنا</h4><div class="footer-contact"><p><i class="fa-regular fa-envelope"></i>mariammokhtari2003@gmail.com </p><p><i class="fa-solid fa-phone"></i> 213792091104+</p></div><div class="footer-social"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div></div></div><div class="footer-bottom"><p>&copy; 2026 معجم العين – جميع الحقوق محفوظة | تصميم وتطوير <strong>G Mayne</strong></p></div></div></footer>
 
     <button id="backToTopBtn" class="back-to-top"><i class="fa-solid fa-chevron-up"></i></button>
 
     <script>
-        // ==================== قاعدة البيانات الكاملة (المدمجة من الصور) ====================
+        // ==================== قاعدة البيانات الكاملة ====================
         const dictionaryDB = [
-            // --- الكلمات السابقة (عينة) ---
+            // --- الكلمات الأصلية (id 1-47) ---
             { id: 1, word: 'كتب', root: 'ك ت ب', rootLetters: ['ك','ت','ب'], meaning: 'الكتابة: خطّ الحروف وتسطيرها، والكَتْبُ: الجمع والضمّ.', chapter: 'ثلاثي', isUsed: true, derivations: ['كتاب','مكتبة','كاتب','مكتوب'], permutations: [{letters:'كتب',status:'مستعملة',isUsed:true},{letters:'كبت',status:'مستعملة',isUsed:true},{letters:'تبك',status:'مهملة',isUsed:false},{letters:'بكت',status:'مستعملة',isUsed:true}] },
             { id: 2, word: 'علم', root: 'ع ل م', rootLetters: ['ع','ل','م'], meaning: 'العِلْم: نقيض الجهل، وهو إدراك الشيء على ما هو به.', chapter: 'ثلاثي', isUsed: true, derivations: ['عالم','علامة','معلوم','تعليم'], permutations: [{letters:'علم',status:'مستعملة',isUsed:true},{letters:'عمل',status:'مستعملة',isUsed:true},{letters:'لمع',status:'مستعملة',isUsed:true}] },
             { id: 3, word: 'خرج', root: 'خ ر ج', rootLetters: ['خ','ر','ج'], meaning: 'الخروج: نقيض الدخول. خرج يخرج خروجاً.', chapter: 'ثلاثي', isUsed: true, derivations: ['خروج','مخرج','خراج','تخريج'], permutations: [{letters:'خرج',status:'مستعملة',isUsed:true},{letters:'جخر',status:'مستعملة',isUsed:true}] },
@@ -86,10 +91,8 @@
             { id: 8, word: 'سفرجل', root: 'س ف ر ج ل', rootLetters: ['س','ف','ر','ج','ل'], meaning: 'السفرجل: فاكهة معروفة.', chapter: 'خماسي', isUsed: true, derivations: ['سفرجلة'], permutations: [{letters:'سفرجل',status:'مستعملة',isUsed:true}] },
             { id: 9, word: 'كم', root: 'ك م', rootLetters: ['ك','م'], meaning: 'كم: حرف استفهام عن العدد.', chapter: 'ثنائي', isUsed: true, derivations: ['كمية','كِمّ'], permutations: [{letters:'كم',status:'مستعملة',isUsed:true},{letters:'مك',status:'مستعملة',isUsed:true}] },
             { id: 10, word: 'قمر', root: 'ق م ر', rootLetters: ['ق','م','ر'], meaning: 'القمر: جرم سماوي منير ليلاً.', chapter: 'ثلاثي', isUsed: true, derivations: ['قمري','قمار','مقامرة'], permutations: [{letters:'قمر',status:'مستعملة',isUsed:true},{letters:'قرم',status:'مستعملة',isUsed:true},{letters:'رمق',status:'مستعملة',isUsed:true},{letters:'مرق',status:'مستعملة',isUsed:true},{letters:'رقم',status:'مستعملة',isUsed:true}] },
-
-            // ==================== 1. باب الثناثي الصحيح (الجذور الثنائية) ====================
             { id: 11, word: 'عتق', root: 'ع ت ق', rootLetters: ['ع','ت','ق'], meaning: 'العِتق: الخلاص من الرق، والعتق: الجودة والقدم.', chapter: 'ثلاثي', isUsed: true, derivations: ['عتاقة','عتوق','معتق'], permutations: [{letters:'عتق',status:'مستعملة',isUsed:true},{letters:'عقت',status:'مستعملة',isUsed:true},{letters:'تقع',status:'مستعملة',isUsed:true},{letters:'قعت',status:'مهملة',isUsed:false}] },
-            { id: 12, word: 'عج', root: 'ع ج ج', rootLetters: ['ع','ج','ج'], meaning: 'العَجُّ: رفع الصوت بالدعاء، والعَجيج: الصوت.', chapter: 'ثلاثي', isUsed: true, derivations: ['عجيج','عجاج','يعج'], permutations: [{letters:'عج',status:'مستعملة',isUsed:true},{letters:'جع',status:'مستعملة',isUsed:true}] },
+            { id: 12, word: 'عج', root: 'ع ج ج', rootLetters: ['ع','ج','ج'], meaning: 'العَجُّ: رفع الصوت بالدعاء، والعجيج: الصوت.', chapter: 'ثلاثي', isUsed: true, derivations: ['عجيج','عجاج','يعج'], permutations: [{letters:'عج',status:'مستعملة',isUsed:true},{letters:'جع',status:'مستعملة',isUsed:true}] },
             { id: 13, word: 'عش', root: 'ع ش ش', rootLetters: ['ع','ش','ش'], meaning: 'العَشُّ: العُشب والعشيش، وموطن الطائر.', chapter: 'ثلاثي', isUsed: true, derivations: ['عشيش','عشاش','أعشاش'], permutations: [{letters:'عش',status:'مستعملة',isUsed:true},{letters:'شع',status:'مستعملة',isUsed:true}] },
             { id: 14, word: 'عف', root: 'ع ف ف', rootLetters: ['ع','ف','ف'], meaning: 'العِفَّة: الكف عن المحارم، والعفاف: الطهارة.', chapter: 'ثلاثي', isUsed: true, derivations: ['عفيف','تعفف','عفافة'], permutations: [{letters:'عف',status:'مستعملة',isUsed:true},{letters:'فع',status:'مستعملة',isUsed:true}] },
             { id: 15, word: 'عص', root: 'ع ص ص', rootLetters: ['ع','ص','ص'], meaning: 'العَصُّ: العصر والضغط، والعصاص: شدة الزمان.', chapter: 'ثلاثي', isUsed: true, derivations: ['عصيص','عصاص','معص'], permutations: [{letters:'عص',status:'مستعملة',isUsed:true},{letters:'صع',status:'مستعملة',isUsed:true}] },
@@ -101,8 +104,6 @@
             { id: 21, word: 'عن', root: 'ع ن ن', rootLetters: ['ع','ن','ن'], meaning: 'العَنُّ: الاعتراض والموانع، والعنون: الحاجز.', chapter: 'ثلاثي', isUsed: true, derivations: ['عنون','تعنين'], permutations: [{letters:'عن',status:'مستعملة',isUsed:true},{letters:'نع',status:'مستعملة',isUsed:true}] },
             { id: 22, word: 'عي', root: 'ع ي ي', rootLetters: ['ع','ي','ي'], meaning: 'العَيُّ: العجز والفشل، والعَياء: الحيرة.', chapter: 'ثلاثي', isUsed: true, derivations: ['عيي','تعيية'], permutations: [{letters:'عي',status:'مستعملة',isUsed:true},{letters:'يع',status:'مستعملة',isUsed:true}] },
             { id: 23, word: 'عم', root: 'ع م م', rootLetters: ['ع','م','م'], meaning: 'العُموم: الشمول والكل، والعام: السنة.', chapter: 'ثلاثي', isUsed: true, derivations: ['عام','عمومية','تعميم'], permutations: [{letters:'عم',status:'مستعملة',isUsed:true},{letters:'مع',status:'مستعملة',isUsed:true}] },
-
-            // ==================== 2. الثلاثي الصحيح من حروف العين ====================
             { id: 24, word: 'عهق', root: 'ع هـ ق', rootLetters: ['ع','ه','ق'], meaning: 'العهق: لون أحمر إلى الصفرة، والعيهق: الظليم.', chapter: 'ثلاثي', isUsed: true, derivations: ['عيهق','عهقة'], permutations: [{letters:'عهق',status:'مستعملة',isUsed:true},{letters:'عقه',status:'مستعملة',isUsed:true},{letters:'هقع',status:'مهملة',isUsed:false},{letters:'هق ع',status:'مهملة',isUsed:false}] },
             { id: 25, word: 'حقر', root: 'ح ق ر', rootLetters: ['ح','ق','ر'], meaning: 'الحَقارة: الصغر والضعة، والحَقْر: الإهانة.', chapter: 'ثلاثي', isUsed: true, derivations: ['حقير','تحقير','حقران'], permutations: [{letters:'حقر',status:'مستعملة',isUsed:true},{letters:'حرق',status:'مستعملة',isUsed:true},{letters:'قحر',status:'مستعملة',isUsed:true},{letters:'قره',status:'مهملة',isUsed:false},{letters:'رح ق',status:'مهملة',isUsed:false},{letters:'رقح',status:'مستعملة',isUsed:true}] },
             { id: 26, word: 'حند', root: 'ح ن د', rootLetters: ['ح','ن','د'], meaning: 'الحَنْد: القطع والضرب، والحندس: الظلمة.', chapter: 'ثلاثي', isUsed: true, derivations: ['حندس','تحاند'], permutations: [{letters:'حند',status:'مستعملة',isUsed:true},{letters:'حدن',status:'مهملة',isUsed:false}] },
@@ -114,8 +115,6 @@
             { id: 32, word: 'خزل', root: 'خ ز ل', rootLetters: ['خ','ز','ل'], meaning: 'الخَزَل: الوهن والضعف، والخذل: الترك.', chapter: 'ثلاثي', isUsed: true, derivations: ['خزال','خزلان','خزول'], permutations: [{letters:'خزل',status:'مستعملة',isUsed:true},{letters:'خلز',status:'مهملة',isUsed:false},{letters:'زخل',status:'مهملة',isUsed:false},{letters:'زلخ',status:'مهملة',isUsed:false}] },
             { id: 33, word: 'غرق', root: 'غ ر ق', rootLetters: ['غ','ر','ق'], meaning: 'الغَرَق: البلل حتى الموت، والغَرَق: كثرة الماء.', chapter: 'ثلاثي', isUsed: true, derivations: ['غريق','إغراق','غرقان'], permutations: [{letters:'غرق',status:'مستعملة',isUsed:true}] },
             { id: 34, word: 'شغل', root: 'ش غ ل', rootLetters: ['ش','غ','ل'], meaning: 'الشُّغْل: ما يشغل عن الشيء، والشغلة: الاشتغال.', chapter: 'ثلاثي', isUsed: true, derivations: ['شاغل','انشغال','شغول'], permutations: [{letters:'شغل',status:'مستعملة',isUsed:true},{letters:'شلغ',status:'مهملة',isUsed:false},{letters:'غ ش ل',status:'مهملة',isUsed:false},{letters:'ل ش غ',status:'مهملة',isUsed:false}] },
-
-            // ==================== 3. أبواب متعددة (باب 12-20) ====================
             { id: 35, word: 'شبغ', root: 'ش ب غ', rootLetters: ['ش','ب','غ'], meaning: 'الشَّبَغ: الفتور والكسل، والشباغ: الثياب الخلق.', chapter: 'ثلاثي', isUsed: true, derivations: ['شبغ','شبوغ'], permutations: [{letters:'شبغ',status:'مستعملة',isUsed:true},{letters:'شغ ب',status:'مستعملة',isUsed:true},{letters:'غشب',status:'مستعملة',isUsed:true}] },
             { id: 36, word: 'قشر', root: 'ق ش ر', rootLetters: ['ق','ش','ر'], meaning: 'القِشْر: القشرة الخارجية للشيء، والتقشير: الإزالة.', chapter: 'ثلاثي', isUsed: true, derivations: ['قشرة','تقشير','قشار'], permutations: [{letters:'قشر',status:'مستعملة',isUsed:true},{letters:'شقر',status:'مستعملة',isUsed:true},{letters:'ر قش',status:'مهملة',isUsed:false}] },
             { id: 37, word: 'قتل', root: 'ق ت ل', rootLetters: ['ق','ت','ل'], meaning: 'القَتْل: إزهاق الروح، والمقاتلة: الحرب.', chapter: 'ثلاثي', isUsed: true, derivations: ['قتيل','قاتل','قتال'], permutations: [{letters:'قتل',status:'مستعملة',isUsed:true},{letters:'قلت',status:'مستعملة',isUsed:true},{letters:'لتق',status:'مهملة',isUsed:false}] },
@@ -125,17 +124,134 @@
             { id: 41, word: 'لذر', root: 'ل ذ ر', rootLetters: ['ل','ذ','ر'], meaning: 'اللَّذْر: الإلقاء والتفريق، واللذار: ما يلقى.', chapter: 'ثلاثي', isUsed: true, derivations: ['لذير','تذار'], permutations: [{letters:'لذر',status:'مستعملة',isUsed:true},{letters:'ل رذ',status:'مهملة',isUsed:false},{letters:'ذ ل ر',status:'مهملة',isUsed:false}] },
             { id: 42, word: 'كرم', root: 'ك ر م', rootLetters: ['ك','ر','م'], meaning: 'الكَرَم: الجود والفضل، والكريم: الشريف.', chapter: 'ثلاثي', isUsed: true, derivations: ['كريم','كرامة','تكريم'], permutations: [{letters:'كرم',status:'مستعملة',isUsed:true},{letters:'كم ر',status:'مستعملة',isUsed:true},{letters:'رمك',status:'مستعملة',isUsed:true}] },
             { id: 43, word: 'لدن', root: 'ل د ن', rootLetters: ['ل','د','ن'], meaning: 'اللِّدْن: اللين والمرونة، والألدن: اللدن.', chapter: 'ثلاثي', isUsed: true, derivations: ['لدين','لدانة','تلدن'], permutations: [{letters:'لدن',status:'مستعملة',isUsed:true},{letters:'لند',status:'مستعملة',isUsed:true},{letters:'ندل',status:'مستعملة',isUsed:true}] },
-
-            // ==================== 4. الرباعي الصحيح ====================
             { id: 44, word: 'هفعر', root: 'ه ف ع ر', rootLetters: ['ه','ف','ع','ر'], meaning: 'الهَفْعَر: الضخم العظيم، والهفاعر: الرجل العظيم.', chapter: 'رباعي', isUsed: true, derivations: ['هفعر','هفاعير'], permutations: [{letters:'هفعر',status:'مستعملة',isUsed:true},{letters:'هفرع',status:'مهملة',isUsed:false},{letters:'عرهف',status:'مهملة',isUsed:false}] },
             { id: 45, word: 'طحلب', root: 'ط ح ل ب', rootLetters: ['ط','ح','ل','ب'], meaning: 'الطُّحْلُب: الخضرة على الماء، والطحلب: نبات مائي.', chapter: 'رباعي', isUsed: true, derivations: ['طحالب','متطحلب','طحلبية'], permutations: [{letters:'طحلب',status:'مستعملة',isUsed:true},{letters:'طحبل',status:'مهملة',isUsed:false},{letters:'لطحب',status:'مهملة',isUsed:false}] },
-            { id: 46, word: 'سكرل', root: 'س ك ر ل', rootLetters: ['س','ك','ر','ل'], meaning: 'السَّكْرَل: الضخم الجافي، والسكرلة: الجسامة.', chapter: 'رباعي', isUsed: true, derivations: ['سكرلة','سكارل'], permutations: [{letters:'سكرل',status:'مستعملة',isUsed:true},{letters:'سكرل',status:'مستعملة',isUsed:true}] },
-            { id: 47, word: 'فرقل', root: 'ف ر ق ل', rootLetters: ['ف','ر','ق','ل'], meaning: 'الفَرْقَل: الضيق والضجر، والمفرقل: المتفرق.', chapter: 'رباعي', isUsed: true, derivations: ['فرقلة','تفرقيل'], permutations: [{letters:'فرقل',status:'مستعملة',isUsed:true},{letters:'فقل ر',status:'مهملة',isUsed:false},{letters:'رقفل',status:'مهملة',isUsed:false}] }
+            { id: 46, word: 'سكرل', root: 'س ك ر ل', rootLetters: ['س','ك','ر','ل'], meaning: 'السَّكْرَل: الضخم الجافي، والسكرلة: الجسامة.', chapter: 'رباعي', isUsed: true, derivations: ['سكرلة','سكارل'], permutations: [{letters:'سكرل',status:'مستعملة',isUsed:true}] },
+            { id: 47, word: 'فرقل', root: 'ف ر ق ل', rootLetters: ['ف','ر','ق','ل'], meaning: 'الفَرْقَل: الضيق والضجر، والمفرقل: المتفرق.', chapter: 'رباعي', isUsed: true, derivations: ['فرقلة','تفرقيل'], permutations: [{letters:'فرقل',status:'مستعملة',isUsed:true},{letters:'فقل ر',status:'مهملة',isUsed:false},{letters:'رقفل',status:'مهملة',isUsed:false}] },
+
+            // ==================== المداخل الجديدة المستخلصة (id 48-105) ====================
+            { id: 48, word: 'عفر', root: 'ع ف ر', rootLetters: ['ع','ف','ر'], meaning: 'جزء الجبر في ركبته (النص الأصلي من f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 49, word: 'عرق', root: 'ع ر ق', rootLetters: ['ع','ر','ق'], meaning: 'صوت الحرير (النص الأصلي f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 50, word: 'فجر', root: 'ف ج ر', rootLetters: ['ف','ج','ر'], meaning: 'عفر كل شيء أفصال ومنكد (النص الأصلي f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 51, word: 'رفع', root: 'ر ف ع', rootLetters: ['ر','ف','ع'], meaning: 'يمبح في قسم الدار (النص الأصلي f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 52, word: 'رفض', root: 'ر ف ض', rootLetters: ['ر','ف','ض'], meaning: 'رفض الثوب في وضع في رفاع (النص الأصلي f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 53, word: 'فريع', root: 'ف ر ع', rootLetters: ['ف','ر','ع'], meaning: 'حماع نشكو (النص الأصلي f1).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 54, word: 'عقف', root: 'ع ق ف', rootLetters: ['ع','ق','ف'], meaning: 'العصب الذي يعفل من الأفؤم بال (النص الأصلي f2).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 55, word: 'عنفق', root: 'ع ن ف ق', rootLetters: ['ع','ن','ف','ق'], meaning: 'الرحلة و الرق والجنكر (النص الأصلي f2).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 56, word: 'فصب', root: 'ف ص ب', rootLetters: ['ف','ص','ب'], meaning: 'أفترج الخلط (النص الأصلي f2).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 57, word: 'عنقر', root: 'ع ن ق ر', rootLetters: ['ع','ن','ق','ر'], meaning: 'شرق الصوت (النص الأصلي f2).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 58, word: 'عفقم', root: 'ع ف ق م', rootLetters: ['ع','ف','ق','م'], meaning: 'وهو شديره، مؤر، سالة الرسغ إلحاقاً ليفغر الولد (النص الأصلي f2).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 59, word: 'معقف', root: 'م ع ق ف', rootLetters: ['م','ع','ق','ف'], meaning: 'السعر في الأزبي سقل (النص الأصلي f2).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 60, word: 'فعفع', root: 'ف ع ف ع', rootLetters: ['ف','ع','ف','ع'], meaning: 'فعفم الرجال إذا أمامه الفألمون جمالاً من بسانهم (النص الأصلي f2).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 61, word: 'فمع', root: 'ف م ع', rootLetters: ['ف','م','ع'], meaning: 'فصعض ثلاذ الولد الذنكد (النص الأصلي f2).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 62, word: 'علفل', root: 'ع ل ف ل', rootLetters: ['ع','ل','ف','ل'], meaning: 'العلفل = موقع المحم من السباتيس والعفتر (النص الأصلي f3, f7).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 63, word: 'علمح', root: 'ع ل م ح', rootLetters: ['ع','ل','م','ح'], meaning: 'الحلاق في أن آدوا رملة محن ونغرقه القرع (النص الأصلي f3).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 64, word: 'ملح', root: 'م ل ح', rootLetters: ['م','ل','ح'], meaning: 'العلح والفلفح أيفال (النص الأصلي f3).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 65, word: 'عدز', root: 'ع د ز', rootLetters: ['ع','د','ز'], meaning: 'الغدز = العبدر القاهر (النص الأصلي f3).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 66, word: 'التديّد', root: 'ت د د', rootLetters: ['ت','د','د'], meaning: 'مالطربق مي الحطب (النص الأصلي f3).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 67, word: 'أطغن', root: 'أ ط غ ن', rootLetters: ['أ','ط','غ','ن'], meaning: 'صوت السحاب (النص الأصلي f3).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 68, word: 'لوج', root: 'ل و ج', rootLetters: ['ل','و','ج'], meaning: 'الدلوس وضو صلوى حد نير (النص الأصلي f3).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 69, word: 'عقل', root: 'ع ق ل', rootLetters: ['ع','ق','ل'], meaning: 'الرج إذا نسعل درجته قبل أن يكملها (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 70, word: 'قحل', root: 'ق ح ل', rootLetters: ['ق','ح','ل'], meaning: 'الحايس من النملوة ويفوم (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 71, word: 'قلع', root: 'ق ل ع', rootLetters: ['ق','ل','ع'], meaning: 'مجوة الإنسان (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 72, word: 'لقح', root: 'ل ق ح', rootLetters: ['ل','ق','ح'], meaning: 'أقلم هاذ القفل (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 73, word: 'لحق', root: 'ل ح ق', rootLetters: ['ل','ح','ق'], meaning: 'كل شيء لحق نيجاوا أو التقعبا به (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 74, word: 'حمز', root: 'ح م ز', rootLetters: ['ح','م','ز'], meaning: 'وسفا الإنسان (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 75, word: 'الخزمي', root: 'خ ز م', rootLetters: ['خ','ز','م'], meaning: 'الكمد (النص الأصلي f4).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 76, word: 'عحد', root: 'ع ح د', rootLetters: ['ع','ح','د'], meaning: 'العقب = الارتفاع (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 77, word: 'حعد', root: 'ح ع د', rootLetters: ['ح','ع','د'], meaning: 'رجل حعقدر البقتر (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 78, word: 'حرنج', root: 'ح ر ن ج', rootLetters: ['ح','ر','ن','ج'], meaning: 'الخرج سطع الكلي (النص الأصلي f5).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 79, word: 'دعج', root: 'د ع ج', rootLetters: ['د','ع','ج'], meaning: 'الذعج = شدة سواد العين وشدة بياضه (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 80, word: 'سلل', root: 'س ل ل', rootLetters: ['س','ل','ل'], meaning: 'العسله دابر تنا تتكبل بالعلس أو تحمل أمراً (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 81, word: 'عبلج', root: 'ع ب ل ج', rootLetters: ['ع','ب','ل','ج'], meaning: 'العلم ممار الوحش لا سمعاً حقفه (النص الأصلي f5).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 82, word: 'حتل', root: 'ح ت ل', rootLetters: ['ح','ت','ل'], meaning: 'هفع (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 83, word: 'عنس', root: 'ع ن س', rootLetters: ['ع','ن','س'], meaning: 'عيس - غيس - عنسنا نملو بنحتون (النص الأصلي f5).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 84, word: 'ناقح ممتاد', root: 'ن ق ح م ت د', rootLetters: ['ن','ق','ح','م','ت','د'], meaning: 'مشروة تلمح الكين من فذه البيس (النص الأصلي f5).', chapter: 'خماسي', isUsed: true, derivations: [], permutations: [] },
+            { id: 85, word: 'عنبج', root: 'ع ن ب ج', rootLetters: ['ع','ن','ب','ج'], meaning: 'العباح خبيط أو مبيس (النص الأصلي f5).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 86, word: 'عحبي', root: 'ع ح ب ي', rootLetters: ['ع','ح','ب','ي'], meaning: 'عجبت تعنني من العجام أبي حست وأننا أنشفيبه ولا يلذ العجمب (النص الأصلي f6).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 87, word: 'عفج', root: 'ع ف ج', rootLetters: ['ع','ف','ج'], meaning: 'العفجة = من أمعاء البطن وهي الأبعل عليها (النص الأصلي f6).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 88, word: 'حصق', root: 'ح ص ق', rootLetters: ['ح','ص','ق'], meaning: 'الحصوق = شدة العدة (النص الأصلي f6).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 89, word: 'قحع', root: 'ق ح ع', rootLetters: ['ق','ح','ع'], meaning: 'أن يقحص الإنسان بشيش نرض عليه شديد مع (النص الأصلي f6).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 90, word: 'عحسي', root: 'ع ح س ي', rootLetters: ['ع','ح','س','ي'], meaning: 'غحسي عحيناً وأو نكمحسي عحوت (النص الأصلي f6).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 91, word: 'نعح', root: 'ن ع ح', rootLetters: ['ن','ع','ح'], meaning: 'نتبع اللنن الذي إريمط ونكو خلاعا (النص الأصلي f6).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 92, word: 'نحع', root: 'ن ح ع', rootLetters: ['ن','ح','ع'], meaning: 'النجعة طلب الكلا والحيو (النص الأصلي f6).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 93, word: 'قعقع', root: 'ق ع ق ع', rootLetters: ['ق','ع','ق','ع'], meaning: 'معنى عفقق قعقاً وقعقاً، والقعقعي = خلاف القوة (النص الأصلي f7).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 94, word: 'يقع', root: 'ي ق ع', rootLetters: ['ي','ق','ع'], meaning: 'شفع نقع المنان فقع، قوقعنا إلا حشسن ويفع لنظان مثل عخيسه وحيده (النص الأصلي f7).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 95, word: 'حصد', root: 'ح ص د', rootLetters: ['ح','ص','د'], meaning: 'معلقت، حصيدة أي التخذت كناشة (النص الأصلي f7).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 96, word: 'نحع (ثان)', root: 'ن ح ع', rootLetters: ['ن','ح','ع'], meaning: 'يحع ملاذا يطن، فلاذ غلا السكين أي دفعه (النص الأصلي f7).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 97, word: 'هقنم', root: 'ه ق ن م', rootLetters: ['ه','ق','ن','م'], meaning: 'رجل هقفقى شديد الجوع = كثير الأكل (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 98, word: 'همقع', root: 'ه م ق ع', rootLetters: ['ه','م','ق','ع'], meaning: 'وايزمل معاشة نودد قمواله وإلا حلدت الأحد خيراً من كلام العصوم (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 99, word: 'قهم', root: 'ق ه م', rootLetters: ['ق','ه','م'], meaning: 'الههم = الإهدام الفقل الاختشم (النص الأصلي f8).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 100, word: 'منهه', root: 'م ن ه ه', rootLetters: ['م','ن','ه','ه'], meaning: 'المنهق والمقتهن بحانرني (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 101, word: 'هلمم', root: 'ه ل م م', rootLetters: ['ه','ل','م','م'], meaning: 'الههم = كسر للشين أو الشيء من الأصل والحجر (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 102, word: 'تهمم', root: 'ت ه م م', rootLetters: ['ت','ه','م','م'], meaning: 'الناشم (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 103, word: 'تمهه', root: 'ت م ه ه', rootLetters: ['ت','م','ه','ه'], meaning: 'نمه اللون بحصو (النص الأصلي f8).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 104, word: 'مته', root: 'م ت ه', rootLetters: ['م','ت','ه'], meaning: 'المته والقتبة، الأبنة في المطلالة والحواثب (النص الأصلي f8).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 105, word: 'الفرقي', root: 'ف ر ق ي', rootLetters: ['ف','ر','ق','ي'], meaning: 'الهوقى = شديد المقرقى بان من الأعماك شين (النص الأصلي f10).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+                        { id: 106, word: 'رهق', root: 'ر ه ق', rootLetters: ['ر','ه','ق'], meaning: 'الملفوف الدحع (النص الأصلي f10).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 107, word: 'قشهر', root: 'ق ش ه ر', rootLetters: ['ق','ش','ه','ر'], meaning: 'الرشهفيو الحضر، قدر مل يكثار به حور ذا وبذق به يبينو (النص الأصلي f10).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 108, word: 'رقده', root: 'ر ق د ه', rootLetters: ['ر','ق','د','ه'], meaning: 'رقهت عيشني رقاهة، قهو رقبه العنن أوهوارنغ الأنهضين (النص الأصلي f10).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 109, word: 'قرهع', root: 'ق ر ه ع', rootLetters: ['ق','ر','ه','ع'], meaning: 'القارقهة الفدسة وما تضمعها من أهواضب (النص الأصلي f10).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 110, word: 'هرج', root: 'ه ر ج', rootLetters: ['ه','ر','ج'], meaning: 'الثزار (النص الأصلي f10).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 111, word: 'هجر', root: 'ه ج ر', rootLetters: ['ه','ج','ر'], meaning: 'الفظم في السم (النص الأصلي f10).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 112, word: 'رهج', root: 'ر ه ج', rootLetters: ['ر','ه','ج'], meaning: 'رهث الشيء ذا حقهم (النص الأصلي f10).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 113, word: 'يهار', root: 'ي ه ر', rootLetters: ['ي','ه','ر'], meaning: 'شهارنة = خالدنهم حتى اظهر (النص الأصلي f10).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 114, word: 'يجره', root: 'ي ج ر ه', rootLetters: ['ي','ج','ر','ه'], meaning: 'الرهارء الميان والوقعة (النص الأصلي f10).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 115, word: 'عقد', root: 'ع ق د', rootLetters: ['ع','ق','د'], meaning: 'عقد الرجل من الميت، يعقد إذا خلقى فذنغيته وديوج عنه الميتاه ويسمى عخدهذة (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 116, word: 'عج', root: 'ع ج ج', rootLetters: ['ع','ج','ج'], meaning: 'رفع الصوت (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: ['عجيج'], permutations: [] },
+            { id: 117, word: 'جع', root: 'ج ع ع', rootLetters: ['ج','ع','ع'], meaning: 'جمجمة الولد لو كهها لا خاصة (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 118, word: 'عسش', root: 'ع س ش', rootLetters: ['ع','س','ش'], meaning: 'ما ينذهه الطاليا في ردوس الأشجار للفروج (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 119, word: 'لتع', root: 'ل ت ع', rootLetters: ['ل','ت','ع'], meaning: 'نسعسعت التزاعي = أن مزحنه (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 120, word: 'عصى', root: 'ع ص ى', rootLetters: ['ع','ص','ى'], meaning: 'التعمن ع أول الدنجر (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 121, word: 'صع', root: 'ص ع ع', rootLetters: ['ص','ع','ع'], meaning: 'العصعصعه = المتوتوق (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 122, word: 'عسى', root: 'ع س ى', rootLetters: ['ع','س','ى'], meaning: 'عسبث الحصايخ أن دينت من الأزي ليلاً في نكليمة وتوني (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 123, word: 'سع', root: 'س ع ع', rootLetters: ['س','ع','ع'], meaning: 'السرسعة = الملاهاع من الدير (النص الأصلي f11).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 124, word: 'حق', root: 'ح ق ق', rootLetters: ['ح','ق','ق'], meaning: 'الحق نقيض الباطل، حق البيد = أي وجب (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 125, word: 'قحع', root: 'ق ح ع', rootLetters: ['ق','ح','ع'], meaning: 'الجع الباقي في الماء والأشياء، يقال الدليطيعة أع لي لم تفتح أتمها لقوج (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 126, word: 'حسش', root: 'ح س ش', rootLetters: ['ح','س','ش'], meaning: 'حسنيث أثراً يا زجهل احسنقها حسشاً أي نجهيث ما نزونق من العصلى أع الخلار (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 127, word: 'شح', root: 'ش ح ح', rootLetters: ['ش','ح','ح'], meaning: 'يقال رذّ شحّاً أي لا يجوده (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 128, word: 'حق (ثان)', root: 'ح ق ق', rootLetters: ['ح','ق','ق'], meaning: 'الأحصعة = الرمي في الدين = حق يخقذ خبره وسيخملن منه (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 129, word: 'صح', root: 'ص ح ح', rootLetters: ['ص','ح','ح'], meaning: 'الصصد = ذهب السقم والبرادة من كل عبيء وصح (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 130, word: 'حذ', root: 'ح ذ ذ', rootLetters: ['ح','ذ','ذ'], meaning: 'قعل ما في كل شمبتر حذ بنهسا (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 131, word: 'رح', root: 'ر ح ح', rootLetters: ['ر','ح','ح'], meaning: 'شنت الدنس روح أي نقع شيئاً في الأريقي نم ذر نفع ونرسني بلذونخ (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 132, word: 'حطا', root: 'ح ط ا', rootLetters: ['ح','ط','ا'], meaning: 'الحطيب عي النقعل والخير (النص الأصلي f12).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 133, word: 'حر', root: 'ح ر ر', rootLetters: ['ح','ر','ر'], meaning: 'الحرير = صوت الماء وموت الريح وخرير العقاب وحفيفها (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: ['حرير'], permutations: [] },
+            { id: 134, word: 'رج', root: 'ر ج ج', rootLetters: ['ر','ج','ج'], meaning: 'الرخاخ = لين العيش، الأرخ = نبات هش، الرخ = من أدواتها المنطلح، والجميع: ركخة من كلام العجم (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 135, word: 'حثم', root: 'ح ث م', rootLetters: ['ح','ث','م'], meaning: 'الحثم المفرع الذي تغيّرت رائحته (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 136, word: 'مح', root: 'م ح ح', rootLetters: ['م','ح','ح'], meaning: 'نقيّ الفنفم (العظم) (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 137, word: 'عك', root: 'ع ك ك', rootLetters: ['ع','ك','ك'], meaning: 'عرى من العوا أي اصطبث العراب الواقض (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 138, word: 'غسس', root: 'غ س س', rootLetters: ['غ','س','س'], meaning: 'غنبو = رجير الغنطا، الغنس = الغنبل مني الأزجال (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 139, word: 'يعخ', root: 'ي ع خ', rootLetters: ['ي','ع','خ'], meaning: 'يستعملت شبئاً في الثزاء أت وحذ هنذ به (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 140, word: 'غرذة', root: 'غ ر ذ ه', rootLetters: ['غ','ر','ذ','ه'], meaning: 'أرخي بمنازل الخاثم وأخذت الفقرة، مضي وشبز إذا الغنبر حملها (النص الأصلي f13).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 141, word: 'ذع', root: 'ذ ع ع', rootLetters: ['ذ','ع','ع'], meaning: 'ذنبر غنت به = أي سخذر به (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 142, word: 'ذغح', root: 'ذ غ ح', rootLetters: ['ذ','غ','ح'], meaning: 'موضع سا لذنام (النص الأصلي f13).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 143, word: 'عطط', root: 'ع ط ط', rootLetters: ['ع','ط','ط'], meaning: 'عطّه في الماء يعطّيه عطّاً، والنائم يعطّ عطيطاً (النص الأصلي f14).', chapter: 'ثلاثي', isUsed: true, derivations: ['عطيط'], permutations: [] },
+            { id: 144, word: 'عذّ', root: 'ع ذ ذ', rootLetters: ['ع','ذ','ذ'], meaning: 'عذر العرخ وغيره عذراً إذا، والأعذذ إذ = الإسراع في السير (النص الأصلي f14).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 145, word: 'خرّ', root: 'خ ر ر', rootLetters: ['خ','ر','ر'], meaning: 'الخرير: صوت الماء، وموت الريح، وخرير العقاب، وصوت الريح (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: ['خرير'], permutations: [] },
+            { id: 146, word: 'الغسّ', root: 'غ س س', rootLetters: ['غ','س','س'], meaning: 'زجر القط (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 147, word: 'الغسّ (ثان)', root: 'غ س س', rootLetters: ['غ','س','س'], meaning: 'الفشل من الرجال (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 148, word: 'سخة', root: 'س خ ه', rootLetters: ['س','خ','ه'], meaning: 'سجّست شيئاً في التراب إذا وجد حتى نية (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 149, word: 'خمّ', root: 'خ م م', rootLetters: ['خ','م','م'], meaning: 'اللحم المُخِمّ الذي تغيّرت رائحته وفسد (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 150, word: 'مخّ', root: 'م خ خ', rootLetters: ['م','خ','خ'], meaning: 'نقيّ العظم (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 151, word: 'رخاخ (ثان)', root: 'ر خ خ', rootLetters: ['ر','خ','خ'], meaning: 'لين العيش، والرَّخ = نبات هش، والرخ = من أدوات الشطرنج، والجميع: ركخة من كلام العجم (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 152, word: 'غزّة', root: 'غ ز ز', rootLetters: ['غ','ز','ز'], meaning: 'أرض أرفق بمشارق الشام، وأغزت البقرة فهي مُرخِّز إذا أعسر حملها (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 153, word: 'زغّ', root: 'ز غ غ', rootLetters: ['ز','غ','غ'], meaning: 'زنعزت به أي سخرت به (النص الأصلي f17).', chapter: 'ثلاثي', isUsed: true, derivations: [], permutations: [] },
+            { id: 154, word: 'زغزغ', root: 'ز غ ز غ', rootLetters: ['ز','غ','ز','غ'], meaning: 'موضع بالشام (النص الأصلي f17).', chapter: 'رباعي', isUsed: true, derivations: [], permutations: [] },
+            { id: 155, word: 'غطا', root: 'غ ط ا', rootLetters: ['غ','ط','ا'], meaning: 'غطّى في الماء يغطّيه غطّاً، والنائم يغطّ غطيطاً (النص الأصلي f18).', chapter: 'ملحق', isUsed: true, derivations: ['غطيط'], permutations: [] },
+            { id: 156, word: 'غذّ', root: 'غ ذ ذ', rootLetters: ['غ','ذ','ذ'], meaning: 'غدّة الجرح يغذّ غذّاً إذا ورم، والأغذاذ إذا = الإسراع في السير (النص الأصلي f18).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 157, word: 'فحو', root: 'ف ح و', rootLetters: ['ف','ح','و'], meaning: 'أسبس الأفحوان، وهو من نبات الربيع (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 158, word: 'حيق', root: 'ح ي ق', rootLetters: ['ح','ي','ق'], meaning: 'هو ما يُحيق بالإنسان من منكر أو سوء يحمله فينزل به ذلك (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 159, word: 'حصى', root: 'ح ص ى', rootLetters: ['ح','ص','ى'], meaning: 'مصغار الحجارة (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 160, word: 'محو', root: 'م ح و', rootLetters: ['م','ح','و'], meaning: 'ذهاب الغيم، تقول: السماء مَحْو (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 161, word: 'حلو', root: 'ح ل و', rootLetters: ['ح','ل','و'], meaning: 'كل ما في طعمه حلاوة (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 162, word: 'خروخ', root: 'خ ر و خ', rootLetters: ['خ','ر','و','خ'], meaning: 'التخنين = الخشب الدقيق، شرسهاء مفترقَين بين بيتين أو داريين لم ينصب عليهما باب (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 163, word: 'قوي', root: 'ق و ي', rootLetters: ['ق','و','ي'], meaning: 'رجل شديد القوى، أي شديد أشر الخلق والبنية (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 164, word: 'قوي (ثان)', root: 'ق و ي', rootLetters: ['ق','و','ي'], meaning: 'قومت الحاجة توقمًا، حقيقة وهي موثها (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 165, word: 'أوى', root: 'أ و ى', rootLetters: ['أ','و','ى'], meaning: 'الأوتة: هيئة يجتمع فيها الماء، الجمع: الأوتى (النص الأصلي f19).', chapter: 'ملحق', isUsed: true, derivations: [], permutations: [] },
+            { id: 166, word: 'أجّ', root: 'أ ج ج', rootLetters: ['أ','ج','ج'], meaning: 'أجّت النار تأجّ أجيجاً (النص الأصلي f20).', chapter: 'ملحق', isUsed: true, derivations: ['أجيج'], permutations: [] }
         ];
 
-        // باقي الكود (وظائف البحث، التمرير الذكي، المودال، المفضلة...) تماماً كما كان في الملف السابق
-        // (تم الحفاظ على جميع الوظائف كما هي دون تغيير)
-
+        // ==================== المتغيرات العامة والدوال الأساسية ====================
         let searchMode = 'word';
         let searchTimeout = null;
         let favorites = JSON.parse(localStorage.getItem('almoein_favorites')) || [];
@@ -143,6 +259,16 @@
 
         function saveFavorites() { localStorage.setItem('almoein_favorites', JSON.stringify(favorites)); }
         function saveHistory() { localStorage.setItem('almoein_history', JSON.stringify(searchHistory)); }
+
+        function normalizeArabic(text) {
+            if (!text) return '';
+            return text.replace(/[\u0617-\u061A\u064B-\u0652]/g, '')
+                       .replace(/[أإآ]/g, 'ا')
+                       .replace(/ة/g, 'ه')
+                       .replace(/ى/g, 'ي')
+                       .replace(/ؤ/g, 'و')
+                       .replace(/ئ/g, 'ي');
+        }
 
         function setSearchMode(mode, tabElement) {
             searchMode = mode;
@@ -155,20 +281,26 @@
             input.value = '';
             document.getElementById('suggestionsDropdown').classList.remove('show');
         }
-
-        function handleSuggestions() {
+                function handleSuggestions() {
             clearTimeout(searchTimeout);
             searchTimeout = setTimeout(() => {
                 const query = document.getElementById('searchInput').value.trim();
                 const dropdown = document.getElementById('suggestionsDropdown');
                 if (query.length < 1) { dropdown.classList.remove('show'); return; }
                 let matches = [];
-                if (searchMode === 'word') matches = dictionaryDB.filter(e => e.word.includes(query));
-                else if (searchMode === 'root') { const clean = query.replace(/\s+/g, ''); matches = dictionaryDB.filter(e => e.root.replace(/\s+/g, '').includes(clean)); }
-                else { const clean = query.replace(/\s+/g, ''); matches = dictionaryDB.filter(e => e.rootLetters.join('').includes(clean)); }
+                const normQuery = normalizeArabic(query);
+                if (searchMode === 'word') {
+                    matches = dictionaryDB.filter(e => normalizeArabic(e.word).includes(normQuery));
+                } else if (searchMode === 'root') {
+                    const clean = normQuery.replace(/\s+/g, '');
+                    matches = dictionaryDB.filter(e => normalizeArabic(e.root).replace(/\s+/g, '').includes(clean));
+                } else {
+                    const clean = normQuery.replace(/\s+/g, '');
+                    matches = dictionaryDB.filter(e => normalizeArabic(e.rootLetters.join('')).includes(clean));
+                }
                 matches = matches.slice(0, 8);
                 if (matches.length === 0) { dropdown.classList.remove('show'); return; }
-                dropdown.innerHTML = matches.map(m => `<div class="suggestion-item" onclick="window.quickSearch('${m.word}')"><span class="sugg-word">${m.word}</span><span class="sugg-root">${m.root}</span><span class="sugg-meaning">${m.meaning.substring(0, 60)}...</span></div>`).join('');
+                dropdown.innerHTML = matches.map(m => `<div class="suggestion-item" onclick="window.quickSearch('${m.word.replace(/'/g, "\\'")}')"><span class="sugg-word">${m.word}</span><span class="sugg-root">${m.root}</span><span class="sugg-meaning">${m.meaning.substring(0, 60)}...</span></div>`).join('');
                 dropdown.classList.add('show');
             }, 200);
         }
@@ -179,25 +311,29 @@
             performSearch();
         };
 
-        function smartScrollToResults() {
+        // دالة تمرير صارمة مع انتظار اكتمال التصيير وإعادة المحاولة
+        function forceScrollToResults(retries = 10) {
             const section = document.getElementById('wordResultSection');
             if (!section) return false;
-            if (section.style.display === 'none' || section.offsetHeight === 0) {
-                setTimeout(() => smartScrollToResults(), 50);
-                return false;
-            }
-            void section.offsetHeight;
             const navbar = document.getElementById('navbar');
             const navbarHeight = navbar ? navbar.offsetHeight : 0;
-            const elementPosition = section.getBoundingClientRect().top + window.scrollY;
+            
+            const rect = section.getBoundingClientRect();
+            if (rect.top === 0 && rect.bottom === 0 && retries > 0) {
+                setTimeout(() => forceScrollToResults(retries - 1), 50);
+                return false;
+            }
+            
+            const elementPosition = rect.top + window.scrollY;
             const offsetPosition = elementPosition - navbarHeight - 20;
             window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            
             setTimeout(() => {
-                const currentPos = window.scrollY;
-                if (Math.abs(currentPos - offsetPosition) > 50) {
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                const newRect = section.getBoundingClientRect();
+                if (Math.abs(newRect.top - (navbarHeight + 20)) > 50 && retries > 0) {
+                    forceScrollToResults(retries - 1);
                 }
-            }, 400);
+            }, 100);
             return true;
         }
 
@@ -208,24 +344,24 @@
                 return;
             }
             let results = [];
+            const normQuery = normalizeArabic(query);
             if (searchMode === 'word') {
-                results = dictionaryDB.filter(e => e.word.includes(query));
+                results = dictionaryDB.filter(e => normalizeArabic(e.word).includes(normQuery));
                 results.sort((a,b) => { if (a.word === query && b.word !== query) return -1; if (b.word === query && a.word !== query) return 1; if (a.word.startsWith(query) && !b.word.startsWith(query)) return -1; if (b.word.startsWith(query) && !a.word.startsWith(query)) return 1; return 0; });
-            } else if (searchMode === 'root') { const clean = query.replace(/\s+/g, ''); results = dictionaryDB.filter(e => e.root.replace(/\s+/g, '').includes(clean)); }
-            else { const clean = query.replace(/\s+/g, ''); results = dictionaryDB.filter(e => e.rootLetters.join('').includes(clean)); }
+            } else if (searchMode === 'root') {
+                const clean = normQuery.replace(/\s+/g, '');
+                results = dictionaryDB.filter(e => normalizeArabic(e.root).replace(/\s+/g, '').includes(clean));
+            } else {
+                const clean = normQuery.replace(/\s+/g, '');
+                results = dictionaryDB.filter(e => normalizeArabic(e.rootLetters.join('')).includes(clean));
+            }
 
             if (results.length === 0) {
                 await Swal.fire({ title: 'لم يتم العثور', html: `❌ لم يتم العثور على نتائج لـ <strong>"${query}"</strong> في وضع البحث بالـ ${searchMode === 'word' ? 'كلمة' : (searchMode === 'root' ? 'جذر' : 'حروف')}.`, icon: 'error', confirmButtonColor: '#d4af37', borderRadius: '1.5rem', customClass: { confirmButton: 'rounded-full' } });
                 return;
             }
 
-            let msgHtml = `✅ تم العثور على <strong>${results.length}</strong> نتيجة:<br><ul style="text-align:right; margin-top:10px;">`;
-            results.forEach(r => { msgHtml += `<li>📖 <strong>${r.word}</strong> (جذر: ${r.root})</li>`; });
-            msgHtml += `</ul><hr><small>سيتم عرض التفاصيل الكاملة في قسم النتائج أدناه.</small>`;
-            await Swal.fire({ title: 'نتائج البحث', html: msgHtml, icon: 'success', confirmButtonText: 'عرض النتائج', confirmButtonColor: '#d4af37', background: '#fefaf5', borderRadius: '1.5rem', customClass: { confirmButton: 'rounded-full' } });
-
             renderResults(results, query);
-            setTimeout(() => smartScrollToResults(), 150);
         }
 
         function renderResults(results, queryTitle) {
@@ -234,13 +370,22 @@
             const titleSpan = document.getElementById('resultsQueryTitle');
             const noResultsDiv = document.getElementById('noResultsMessage');
             if (!container || !section) return;
-            if (!results || results.length === 0) { container.innerHTML = ''; noResultsDiv.style.display = 'block'; titleSpan.innerText = queryTitle || '---'; section.style.display = 'block'; return; }
+            if (!results || results.length === 0) { 
+                container.innerHTML = ''; 
+                noResultsDiv.style.display = 'block'; 
+                titleSpan.innerText = queryTitle || '---'; 
+                section.style.display = 'block'; 
+                forceScrollToResults();
+                return; 
+            }
             noResultsDiv.style.display = 'none';
             titleSpan.innerText = queryTitle || ` (${results.length} نتيجة)`;
             container.innerHTML = results.map(entry => `<div class="result-word-card" data-word-id="${entry.id}"><div class="card-word-main"><span class="card-word">${entry.word}</span><span class="card-root">${entry.root}</span></div><div class="card-meaning-preview">${entry.meaning.substring(0, 100)}...</div><div class="card-meta"><span class="${entry.isUsed ? 'badge-used' : 'badge-unused'}">${entry.isUsed ? '✓ مستعملة' : '✗ مهملة'}</span><span class="badge-chapter">${entry.chapter}</span><span style="color:#aaa;">${entry.derivations.length} اشتقاق | ${entry.permutations.length} تقليب</span></div></div>`).join('');
             document.querySelectorAll('.result-word-card').forEach(card => { card.addEventListener('click', () => { const id = parseInt(card.getAttribute('data-word-id')); const wordObj = dictionaryDB.find(w => w.id === id); if (wordObj) showWordDetailModal(wordObj); }); });
             section.style.display = 'block';
-            void section.offsetHeight;
+            requestAnimationFrame(() => {
+                setTimeout(() => forceScrollToResults(), 20);
+            });
         }
 
         function showWordDetailModal(wordObj) {
@@ -251,7 +396,7 @@
             if (!modalOverlay || !modalContent) return;
             const permHTML = wordObj.permutations.map(p => `<span class="perm-item ${p.isUsed ? 'perm-used' : 'perm-unused'}" title="${p.status}">${p.letters} <small>(${p.status})</small></span>`).join('');
             const derivHTML = wordObj.derivations.map(d => `<span class="deriv-tag">${d}</span>`).join('');
-            modalContent.innerHTML = `<div class="modal-word-title">${wordObj.word}</div><div class="modal-root-highlight"><span>الجذر: ${wordObj.root}</span></div><div class="detail-section"><h4>📖 المعنى</h4><p class="meaning-text">${wordObj.meaning}</p></div><div class="detail-section"><h4>📌 معلومات الكلمة</h4><div class="info-grid"><div class="info-item"><span>الباب</span><span>${wordObj.chapter}</span></div><div class="info-item"><span>الحالة</span><span style="color:${wordObj.isUsed ? '#2e6b47' : '#b33'}">${wordObj.isUsed ? 'مستعملة' : 'مهملة'}</span></div><div class="info-item"><span>الاشتقاقات</span><span>${wordObj.derivations.length}</span></div><div class="info-item"><span>التقليبات</span><span>${wordObj.permutations.length}</span></div></div></div><div class="detail-section"><h4>🌿 الاشتقاقات</h4><div class="derivations-list">${derivHTML}</div></div><div class="detail-section"><h4>🔄 تقليبات الحروف</h4><div class="permutations-grid">${permHTML}</div></div><button class="fav-modal-btn" id="modalFavBtn">${isFavorite(wordObj.id) ? '❤️ أُضيفت إلى المفضلة' : '🤍 حفظ إلى المفضلة'}</button>`;
+            modalContent.innerHTML = `<div class="modal-word-title">${wordObj.word}</div><div class="modal-root-highlight"><span>الجذر: ${wordObj.root}</span></div><div class="detail-section"><h4>📖 المعنى</h4><p class="meaning-text">${wordObj.meaning}</p></div><div class="detail-section"><h4>📌 معلومات الكلمة</h4><div class="info-grid"><div class="info-item"><span>الباب</span><span>${wordObj.chapter}</span></div><div class="info-item"><span>الحالة</span><span style="color:${wordObj.isUsed ? '#2e6b47' : '#b33'}">${wordObj.isUsed ? 'مستعملة' : 'مهملة'}</span></div><div class="info-item"><span>الاشتقاقات</span><span>${wordObj.derivations.length}</span></div><div class="info-item"><span>التقليبات</span><span>${wordObj.permutations.length}</span></div></div></div><div class="detail-section"><h4>🌿 الاشتقاقات</h4><div class="derivations-list">${derivHTML || 'لا توجد اشتقاقات مسجلة'}</div></div><div class="detail-section"><h4>🔄 تقليبات الحروف</h4><div class="permutations-grid">${permHTML || 'لا توجد تقليبات مسجلة'}</div></div><button class="fav-modal-btn" id="modalFavBtn">${isFavorite(wordObj.id) ? '❤️ أُضيفت إلى المفضلة' : '🤍 حفظ إلى المفضلة'}</button>`;
             modalOverlay.style.display = 'flex';
             document.body.style.overflow = 'hidden';
             const favBtn = document.getElementById('modalFavBtn');
@@ -272,6 +417,7 @@
             document.querySelectorAll('.fav-word').forEach(el => { el.addEventListener('click', () => { const id = parseInt(el.dataset.wordId); const word = dictionaryDB.find(w => w.id === id); if (word) showWordDetailModal(word); }); });
             document.querySelectorAll('.remove-fav').forEach(btn => { btn.addEventListener('click', (e) => { e.stopPropagation(); const id = parseInt(btn.dataset.wordId); removeFromFavorites(id); }); });
         }
+
         function renderHistoryList() {
             const container = document.getElementById('historyList'); if (!container) return;
             if (searchHistory.length === 0) { container.innerHTML = '<li class="empty-msg">لا يوجد سجل بحث بعد.</li>'; return; }
@@ -290,12 +436,7 @@
                         await Swal.fire({ title: '📭 لا توجد كلمات', text: `باب "${bab}" لا يحتوي على أي كلمات في قاعدة البيانات الحالية.`, icon: 'info', confirmButtonColor: '#d4af37', borderRadius: '1.5rem', customClass: { confirmButton: 'rounded-full' } });
                         return;
                     }
-                    let wordListHtml = `<div style="max-height:300px; overflow-y:auto; text-align:right;">`;
-                    filtered.forEach(e => { wordListHtml += `<div style="padding:6px 0; border-bottom:1px solid #eee;">📘 ${e.word} (${e.root})</div>`; });
-                    wordListHtml += `</div><br><small>سيتم عرض التفاصيل الكاملة في قسم النتائج.</small>`;
-                    await Swal.fire({ title: `باب ${bab}`, html: `<strong>${filtered.length} كلمة</strong><br>${wordListHtml}`, icon: 'success', confirmButtonText: 'عرض النتائج', confirmButtonColor: '#d4af37', borderRadius: '1.5rem', customClass: { confirmButton: 'rounded-full' }, width: '90%', maxWidth: '500px' });
                     renderResults(filtered, `باب ${bab}`);
-                    setTimeout(() => smartScrollToResults(), 150);
                 });
             });
         }
@@ -306,8 +447,42 @@
                     e.stopPropagation();
                     let letter = card.getAttribute('data-pronounce') || card.getAttribute('data-letter') || card.innerText.trim();
                     let makhraj = card.getAttribute('data-makhraj') || 'سيتم إضافة التفاصيل لاحقاً.';
-                    if (window.speechSynthesis) { window.speechSynthesis.cancel(); const utterance = new SpeechSynthesisUtterance(letter); utterance.lang = 'ar-SA'; utterance.rate = 0.9; window.speechSynthesis.speak(utterance); }
+                    if (window.speechSynthesis) {
+                        window.speechSynthesis.cancel();
+                        const utterance = new SpeechSynthesisUtterance(letter);
+                        utterance.lang = 'ar-SA';
+                        utterance.rate = 0.9;
+                        window.speechSynthesis.speak(utterance);
+                    } else {
+                        await Swal.fire({ title: '⚠️ غير مدعوم', text: 'متصفحك لا يدعم خاصية النطق الصوتي.', icon: 'warning', confirmButtonColor: '#d4af37', timer: 1500 });
+                    }
                     await Swal.fire({ title: `🔊 حرف: ${letter}`, text: `📍 المخرج: ${makhraj}`, icon: 'info', confirmButtonText: 'سمعت', confirmButtonColor: '#d4af37', background: '#fefaf5', borderRadius: '1.5rem', customClass: { confirmButton: 'rounded-full' }, timer: 2500, showConfirmButton: true });
+                });
+            });
+        }
+
+        // دالة التمرير السلس للروابط الداخلية (للقائمة العلوية والمتنقلة)
+        function initSmoothNavLinks() {
+            const allLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+            allLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href && href.startsWith('#')) {
+                        e.preventDefault();
+                        let targetId = href.substring(1);
+                        if (targetId === 'home') {
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                            return;
+                        }
+                        const targetElement = document.getElementById(targetId);
+                        if (targetElement) {
+                            const navbar = document.getElementById('navbar');
+                            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+                            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+                            const offsetPosition = elementPosition - navbarHeight - 20;
+                            window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+                        }
+                    }
                 });
             });
         }
@@ -339,6 +514,7 @@
             renderFavoritesList();
             renderHistoryList();
             setSearchMode('word', document.querySelector('.search-tab.active'));
+            initSmoothNavLinks();   // تم إضافة هذه الدالة للتمرير السلس عند النقر على الروابط
             console.log(`✅ معجم العين جاهز - ${dictionaryDB.length} كلمة في قاعدة البيانات`);
         });
     </script>
