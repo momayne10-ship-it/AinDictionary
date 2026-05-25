@@ -1303,3 +1303,32 @@ body {
         left: 15px;
     }
 }
+
+        /* جعل نتائج البحث قابلة للتمرير بشكل أنيق */
+        .results-list-container {
+            max-height: 450px;
+            overflow-y: auto;
+            padding-left: 5px;
+            padding-right: 5px;
+            scrollbar-width: thin;
+            scrollbar-color: #d4af37 #f0e6d8;
+        }
+
+        /* تزيين شريط التمرير لمتصفحات WebKit (Chrome, Safari, Edge) */
+        .results-list-container::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .results-list-container::-webkit-scrollbar-track {
+            background: #f0e6d8;
+            border-radius: 10px;
+        }
+
+        .results-list-container::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 10px;
+        }
+
+        .results-list-container::-webkit-scrollbar-thumb:hover {
+            background: #b8860b;
+        }
